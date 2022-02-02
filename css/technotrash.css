@@ -60,12 +60,12 @@ html {
     align-items: end;
 }
 
-.colophon{
+.colophon {
     padding: 1rem;
     max-width: 30rem;
     margin-left: 0;
 
-   
+
 }
 
 .container-objects {
@@ -76,34 +76,50 @@ img {
     filter: drop-shadow(0px 0px 10px black);
 }
 
-#box1{
+#box1 {
     max-width: 15%;
 }
 
-#box2{
+#box2 {
     max-width: 15%;
 }
 
-#box3{
+#box3 {
     max-width: 5%;
 }
 
-#box4{
+#box4 {
     max-width: 15%;
 }
 
-#box5{
+#box5 {
     max-width: 13%;
 }
 
-#box6{
+#box6 {
     max-width: 7%;
 }
 
-#box7{
+#box7 {
     max-width: 11%;
 }
 
-#box8{
+#box8 {
     max-width: 20%;
+}
+
+.box {
+    opacity: 0;
+    animation: fadeIn ease 2s forwards; 
+    animation-delay: 1s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+  
+    100% {
+        opacity: 1;
+    }
 }

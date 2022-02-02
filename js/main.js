@@ -7,10 +7,14 @@ $(document).ready(function () {
             $(this).css("z-index", a++);
         }
     });
-    //   $('#dragZone div').click(function() {
-    //     $(this).addClass('top').removeClass('bottom');
-    //     $(this).siblings().removeClass('top').addClass('bottom');
-    //     $(this).css("z-index", a++);
 
-    //   });
+    // random positioning of objects
+    $(".box").each(element => {
+        let offset = 100;
+        let x = Math.floor(Math.random() * window.innerWidth-offset);
+        let y = Math.floor(Math.random() * window.innerHeight-offset);
+        let random_rotate = 5 - Math.floor(Math.random()*10)
+        //console.log(random_rotate)
+        $("#box"+element).css({top: y + "px", left: x + "px", position:'absolute', transform: "rotate("+random_rotate+"deg"});
+    });
 });

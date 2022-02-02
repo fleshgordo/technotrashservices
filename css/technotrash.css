@@ -11,10 +11,8 @@
 }
 
 html {
-    font-family: "Ortica Light";
+    font-family: "Ortica Light", serif;
 }
-
-
 
 .container {
     display: block;
@@ -37,7 +35,7 @@ html {
 .project-title {
     font-size: 35vh;
     line-height: 1;
-    font-family: "Ortica Light";
+    font-family: "Ortica Light", serif;
     letter-spacing: 5px;
     height: 33.3vh;
 }
@@ -112,7 +110,7 @@ img {
 
 .box {
     opacity: 0;
-    animation: fadeIn ease 2s forwards; 
+    animation: fadeIn ease 2s forwards;
     animation-delay: 1s;
 }
 
@@ -120,7 +118,7 @@ img {
     0% {
         opacity: 0;
     }
-  
+
     100% {
         opacity: 1;
     }

@@ -1,0 +1,10 @@
+.extension-mask {
+    pointer-events: none !important;
+    user-select: none !important;
+
+    mask-position: 0 0;
+    mask-repeat: no-repeat;
+
+    -webkit-mask-position: 0 0;
+    -webkit-mask-repeat: no-repeat;
+}

@@ -80,6 +80,17 @@ img {
     techno trash services theme (tts-)
 */
 
+/**
+parameters
+*/
+
+:root {
+    --color-light:  #FFFFFF;
+    --color-dark:   #000000;
+
+    --gutter: 20px;
+}
+
 
 /**
 tts typo & page layout
@@ -87,12 +98,11 @@ tts typo & page layout
 
 .tts-page {
     position: relative;
-    overflow: hidden;
 }
 
 .tts-page--is-negative {
-    background: black;
-    color: white;
+    background: var(--color-dark);
+    color: var(--color-light);
 }
 
 /**
@@ -103,6 +113,7 @@ tts grid
     display: flex;
     overflow: hidden;
     position: relative;
+    flex-wrap: wrap;
 }
 
 [class*=tts-grid-coll-] {
@@ -116,8 +127,52 @@ tts grid
     margin-bottom: 0;
 }
 
-.tts-grid-coll-1-2 { width: calc(100% / 2) }
-.tts-grid-coll-1-3 { width: calc(100% / 3) }
+.tts-grid-coll-1-1 { width: calc( (100% / 2) * 1 ); }
+
+.tts-grid-coll-1-2 { width: calc( (100% / 2) * 1 ); }
+
+.tts-grid-coll-1-3 { width: calc( (100% / 3) * 1 ); }
+.tts-grid-coll-2-3 { width: calc( (100% / 3) * 2 ); }
+
+.tts-grid-row-1-2 { margin-left: calc( (100% / 2) * 1 ); }
+
+.tts-grid-row-1-3 { margin-left: calc( (100% / 3) * 1 ); }
+.tts-grid-row-2-3 { margin-left: calc( (100% / 3) * 2 ); }
+
+.tts-grid--with-gutter {
+    box-sizing: border-box;
+    padding-left: calc( var(--gutter) / 2 );
+    padding-right: calc( var(--gutter) / 2 );
+}
+
+
+/**
+    specific to project page
+*/
+
+.tts-page--project #tts-page__title {
+    top: 0;
+    left: 0;
+    position: fixed;
+}
+
+.tts-page--project .tts-page--project__background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background: var(--color-light);
+    z-index: -1000;
+}
+
+.tts-page--project .tts-page--project__background > iframe {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border: none;
+}
 
 #box1 {
     max-width: 20%;

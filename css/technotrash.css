@@ -33,9 +33,11 @@ html {
 }
 
 .project-title {
-    font-size: 33vh;
+    font-size: 35vh;
     line-height: 1;
     font-family: "Ortica Light";
+    letter-spacing: 5px;
+    height: 33.3vh;
 }
 
 .headline {

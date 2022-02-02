@@ -1,0 +1,20 @@
+@media screen and (max-width: 600px) {
+  .sub-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: end;
+  }
+
+  .project-title {
+    font-size: 30vw;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+  }
+
+  .headline {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+  }
+}

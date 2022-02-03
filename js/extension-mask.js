@@ -21,6 +21,9 @@ class MaskExtensions {
 
        /** window.addEventListener("mousemove", e => this.#setMaskPosition({
             x: e.clientX,
+        // this.#setMaskPosition({x: width*.3, y:window.innerHeight - width * .5})
+        window.addEventListener("mousemove", e => this.#setMaskPosition({
+            x: e.clientX, // ou width * .25 
             y: e.clientY,
         })) */
 

@@ -18,9 +18,7 @@ $(document).ready(function () {
                 }, 250);
             });
         });
-    } else {
-        $(".colophon, .text").hide();
-    }
+    } 
 
     $(".tts-page--project").append("<div class='fading-mask fading-mask--is-negative'></div>");
     // click handler for mask, fade to white and redirect back to index after short delay 

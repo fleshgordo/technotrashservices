@@ -7,6 +7,15 @@ $(document).ready(function () {
             $(this).css("z-index", a++);
         }
     });
+    $("#box1,#box2,#box3,#box4,#box5,#box6,#box7,#box8").click(function(){
+        $(this).css('transform', 'scale(100)');
+        let redirect_url = $(this).data("link")
+        console.log(redirect_url)
+        setTimeout(function() {
+            window.location.href = redirect_url
+          }, 300);
+        
+    });
 
     let random_pos_x = [];
     let random_pos_y = [];
@@ -29,7 +38,7 @@ $(document).ready(function () {
         element += 1;
         y > window.innerHeight - 400 ? y -  $("#box" + element).css("height") : y;
         x > window.innerWidth - 400 ? y -  $("#box" + element).css("width") : y;
-        console.log(y)
+        
         let random_deg = random_rotate * .5 - Math.floor(Math.random() * random_rotate)
         $("#box" + element).css({
             top: y + "px",

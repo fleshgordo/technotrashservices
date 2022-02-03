@@ -1,0 +1,274 @@
+@font-face {
+    font-family: "Ortica Light";
+    src: url("./font/Ortica-Light.woff2") format("woff2"),
+        url("./font/Ortica-Light.woff2") format("woff");
+}
+
+@font-face {
+    font-family: "Ortica Bold";
+    src: url("./font/Ortica-Bold.woff2") format("woff2"),
+        url("./font/Ortica-Bold.woff2") format("woff");
+}
+
+html {
+    font-family: "Ortica Light", serif;
+    
+}
+
+
+
+.container {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.sub-container {
+    position: absolute;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.website-title {
+    font-size: 35vh;
+    line-height: 1;
+    font-family: "Ortica Light", serif;
+    letter-spacing: 5px;
+    height: 33.3vh;
+}
+
+.headline {
+    display: flex;
+    align-content: center;
+    align-items: start;
+    height: 33.3vh;
+}
+
+.text {
+    padding: 0rem;
+    max-width: 30rem;
+    margin-left: 9vw;
+    padding-top: 1vh;
+}
+
+.bottomline {
+    display: flex;
+    align-content: center;
+    align-items: end;
+    height: 33.3vh;
+}
+
+.colophon {
+    padding: 0rem;
+    max-width: 30rem;
+    margin-left: 0;
+    padding-bottom: 1.2vh;
+
+
+}
+
+.container-objects {
+    z-index: 99;
+}
+
+/**
+    techno trash services theme (tts-)
+*/
+
+/**
+parameters
+*/
+
+:root {
+    --color-light:  #FFFFFF;
+    --color-dark:   #000000;
+    --gutter: 20px;
+}
+
+
+/**
+tts typo & page layout
+*/
+
+.tts-page {
+    position: relative;
+}
+
+.tts-page--is-negative {
+    background: var(--color-dark);
+    color: var(--color-light);
+}
+
+/**
+tts grid
+ */
+
+.tts-grid-container {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+[class*=tts-grid-coll-] {
+    display: block;
+    overflow: hidden;
+}
+[class*=tts-grid-coll-] > *:first-child {
+    margin-top: 0;
+}
+[class*=tts-grid-coll-] > *:last-child {
+    margin-bottom: 0;
+}
+
+.tts-grid-coll-1-1 { width: calc( (100% / 2) * 1 ); }
+
+.tts-grid-coll-1-2 { width: calc( (100% / 2) * 1 ); }
+
+.tts-grid-coll-1-3 { width: calc( (100% / 3) * 1 ); }
+.tts-grid-coll-2-3 { width: calc( (100% / 3) * 2 ); }
+
+.tts-grid-row-1-2 { margin-left: calc( (100% / 2) * 1 ); }
+
+.tts-grid-row-1-3 { margin-left: calc( (100% / 3) * 1 ); }
+.tts-grid-row-2-3 { margin-left: calc( (100% / 3) * 2 ); }
+
+.tts-grid--with-gutter {
+    box-sizing: border-box;
+    padding-left: calc( var(--gutter) / 2 );
+    padding-right: calc( var(--gutter) / 2 );
+}
+
+
+/**
+    specific to project page
+*/
+
+.tts-page--project #tts-page__title {
+    top: 0;
+    left: 0;
+    position: fixed;
+}
+
+.tts-page--project .tts-page--project__background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background: var(--color-light);
+    z-index: -1000;
+}
+
+.tts-page--project .tts-page--project__background > iframe {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border: none;
+}
+
+#box1 {
+    max-width: 20%;
+}
+
+#box2 {
+    max-width: 20%;
+}
+
+#box3 {
+    max-width: 4%;
+}
+
+#box4 {
+    max-width: 12%;
+}
+
+#box5 {
+    max-width: 17%;
+}
+
+#box6 {
+    max-width: 5%;
+}
+
+#box7 {
+    max-width: 9%;
+}
+
+#box8 {
+    max-width: 25%;
+}
+
+.box {
+    opacity: 0;
+    animation: fadeIn ease 2s forwards;
+    animation-delay: 1.5s;
+    transition: transform .5s ease-in;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+/*********template page projet*********/
+
+.project-title{
+    width: 90vw;
+    padding-top: 1vh;
+}
+
+
+/*.project-content{
+    width: 65vw;
+    top: 0;
+    background-color: pink;
+    margin-left: 10px;
+}*/
+
+
+
+.project-content{
+width: 65vw;
+top: 0;
+background-color: pink;
+margin-left: 10px;
+position: absolute;
+margin-top: 28px;
+}
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+    display: block; /* remove extra space below image */
+}
+
+video{
+    max-width: 100%;
+    max-height: 100%;
+
+}
+
+.slick-slider{
+    margin-left: 10px;
+
+}
+

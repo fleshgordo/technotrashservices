@@ -17,75 +17,6 @@ html {
 
 
 
-.container {
-    display: block;
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-}
-
-.sub-container {
-    position: absolute;
-    flex-direction: column;
-    top: 0;
-    left: 0;
-    display: flex;
-    width: 100%;
-    height: 100%;
-    justify-content: space-between;
-}
-
-.website-title {
-    font-size: 35vh;
-    line-height: 1;
-    font-family: "Ortica Light", serif;
-    letter-spacing: 5px;
-    height: 33.3vh;
-}
-
-.headline {
-    display: flex;
-    align-content: center;
-    align-items: start;
-    height: 33.3vh;
-}
-
-.text {
-    padding: 0rem;
-    max-width: 30rem;
-    margin-left: 9vw;
-    padding-top: 1vh;
-}
-
-.bottomline {
-    display: flex;
-    align-content: center;
-    align-items: end;
-    height: 33.3vh;
-}
-
-.colophon {
-    padding: 0rem;
-    max-width: 30rem;
-    margin-left: 0;
-    padding-bottom: 1.2vh;
-
-
-}
-
-.container-objects {
-    z-index: 99;
-}
-
-/**
-    techno trash services theme (tts-)
-*/
-
-/**
-parameters
-*/
-
 :root {
     --color-light:  #FFFFFF;
     --color-dark:   #000000;
@@ -175,54 +106,7 @@ tts grid
     border: none;
 }
 
-#box1 {
-    max-width: 20%;
-}
 
-#box2 {
-    max-width: 20%;
-}
-
-#box3 {
-    max-width: 4%;
-}
-
-#box4 {
-    max-width: 12%;
-}
-
-#box5 {
-    max-width: 17%;
-}
-
-#box6 {
-    max-width: 5%;
-}
-
-#box7 {
-    max-width: 9%;
-}
-
-#box8 {
-    max-width: 25%;
-}
-
-.box {
-    opacity: 0;
-    animation: fadeIn ease 2s forwards;
-    animation-delay: 1.5s;
-    transition: transform .5s ease-in;
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
 
 
 
@@ -231,34 +115,47 @@ tts grid
 
 /*********template page projet*********/
 
-.project-title{
-    width: 90vw;
+
+.headline {
+    display: flex;
+    align-content: center;
+    align-items: start;
+    height: 33.3vh;
+}
+
+.text {
+    padding: 0rem;
+    max-width: 30rem;
+    margin-left: 9vw;
     padding-top: 1vh;
 }
 
 
-/*.project-content{
-    width: 65vw;
-    top: 0;
-    background-color: pink;
+
+.project-title{
+    width: 90vw;
+    padding-top: 2.7vh;
     margin-left: 10px;
-}*/
+}
+
+
 
 
 
 .project-content{
 width: 65vw;
-top: 0;
-background-color: pink;
+top: 23vh;
 margin-left: 10px;
 position: absolute;
 margin-top: 28px;
+
 }
 
 img{
     max-width: 100%;
-    max-height: 100%;
-    display: block; /* remove extra space below image */
+    max-height: 150%;
+    /*display: block;  remove extra space below image */
+    
 }
 
 video{
@@ -268,7 +165,20 @@ video{
 }
 
 .slick-slider{
+    width: 65vw;
+    top: 26vh;
     margin-left: 10px;
+    position: absolute;
+    /*margin-top: 28px;*/
+    
+    }
 
-}
+    .imgslider{
+        
+        background-color: pink;
+        height: 72.5vh;
+       
+    }
+
+
 

@@ -7,16 +7,24 @@ $(document).ready(function () {
             $(this).css("z-index", a++);
         }
     });
-    $("#box1,#box2,#box3,#box4,#box5,#box6,#box7,#box8").click(function(){
+    $(".box").click(function () {
         $(this).css('transform', 'scale(100)');
         let redirect_url = $(this).data("link")
-        console.log(redirect_url)
-        setTimeout(function() {
+        setTimeout(function () {
             window.location.href = redirect_url
-          }, 300);
+        }, 300);
+    });
+    $(".tss-clip-path").click(function () {
+        document.querySelector(".extension-mask").style.transition = "all .5s ease-in"
+        document.querySelector(".extension-mask").style.maskSize = "500% auto"
+        document.querySelector(".extension-mask").style.webkitMaskSize = "500% auto"
+        document.querySelector(".extension-mask").style.maskPosition = "-200vw -50vh"
+        document.querySelector(".extension-mask").style.webkitMaskPosition = "-200vw -50vh"
+        setTimeout(function () {
+            window.location.href = "/index.html"
+        }, 300);
         
     });
-
     let random_pos_x = [];
     let random_pos_y = [];
     let number_of_elements = 8;
@@ -36,9 +44,9 @@ $(document).ready(function () {
         let x = random_pos_x[element]
         let y = random_pos_y[element]
         element += 1;
-        y > window.innerHeight - 400 ? y -  $("#box" + element).css("height") : y;
-        x > window.innerWidth - 400 ? y -  $("#box" + element).css("width") : y;
-        
+        y > window.innerHeight - 400 ? y - $("#box" + element).css("height") : y;
+        x > window.innerWidth - 400 ? y - $("#box" + element).css("width") : y;
+
         let random_deg = random_rotate * .5 - Math.floor(Math.random() * random_rotate)
         $("#box" + element).css({
             top: y + "px",

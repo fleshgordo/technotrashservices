@@ -242,7 +242,6 @@ tts grid
 }
 
 .box {
-    opacity: 0;
     display: none;
     cursor: pointer;
 }

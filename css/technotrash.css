@@ -246,21 +246,6 @@ tts grid
 }
 
 .box {
-    opacity: 0;
-    animation: fadeIn ease 2s forwards;
-    animation-delay: 1.5s;
-    transition: transform .5s ease-in;
+    display: none;
+    cursor: pointer;
 }
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-
-

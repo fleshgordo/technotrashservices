@@ -1,30 +1,35 @@
 $(document).ready(function () {
-    let a = 3;
-    $("#box1,#box2,#box3,#box4,#box5,#box6,#box7,#box8").draggable({
-        preventCollision: true,
-        containment: ".container-objects",
-        start: function (event, ui) {
-            $(this).css("z-index", a++);
-        }
-    });
-    $(".box").click(function () {
-        $(this).css('transform', 'scale(100)');
-        let redirect_url = $(this).data("link")
-        setTimeout(function () {
-            window.location.href = redirect_url
-        }, 300);
-    });
-    $(".tss-clip-path").click(function () {
-        document.querySelector(".extension-mask").style.transition = "all .5s ease-in"
-        document.querySelector(".extension-mask").style.maskSize = "500% auto"
-        document.querySelector(".extension-mask").style.webkitMaskSize = "500% auto"
-        document.querySelector(".extension-mask").style.maskPosition = "-200vw -50vh"
-        document.querySelector(".extension-mask").style.webkitMaskPosition = "-200vw -50vh"
+    let a = 0;
+    if (window.location.hash !== "#no-objects") {
+        $(".box").fadeIn("fast", function () {
+            $(".box").draggable({
+                preventCollision: true,
+                containment: ".container-objects",
+                start: function (event, ui) {
+                    $(this).css("z-index", a++);
+                }
+            });
+            // click handler for silhouettes, fade to black mask and redirect after short delay
+            $(".box").click(function () {
+                $(".fading-mask").css('opacity', 1);
+                let redirect_url = $(this).data("link")
+                setTimeout(function () {
+                    window.location.href = redirect_url
+                }, 250);
+            });
+        });
+    }
+
+    $(".tts-page--project").append("<div class='fading-mask fading-mask--is-negative'></div>");
+    // click handler for mask, fade to white and redirect back to index after short delay 
+    $(".fading-mask--is-negative").click(function () {
+        $(".fading-mask--is-negative").css('opacity', 1);
         setTimeout(function () {
             window.location.href = "/index.html"
-        }, 300);
-        
+        }, 250);
+        console.log("test")
     });
+
     let random_pos_x = [];
     let random_pos_y = [];
     let number_of_elements = 8;

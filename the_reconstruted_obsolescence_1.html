@@ -7,6 +7,9 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
     <meta property="og:title" content="">
     <meta property="og:type" content="">
     <meta property="og:url" content="">
@@ -18,7 +21,7 @@
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/technotrash.css">
+    <link rel="stylesheet" href="css/project_template.css">
     <link rel="stylesheet" href="css/responsive.css">
     <meta name="theme-color" content="#fafafa">
 </head>
@@ -27,13 +30,28 @@
 
 
     <div class="headline">
-        <div class="project-title">techno</div>
+        <div class="project-title">
+            <p>The Reconstruted Obsolescence</p>
+        </div>
         <div class="text"><i>Techno trash services</i> is a student collective created to explore the roles of discarded
             electronic devices and data.
             <br>What can we do with our old electronic devices? What could they be used for?
             <br>During this exploration, Techno trash services proposes to create new services or products.
         </div>
     </div>
+
+    <div class="project-content">
+        <div class="slider-images">
+            <div class="imgslider"><img src="img/img_parasite_1.jpeg"></div>
+            <div class="imgslider"><img src="img/img_parasite_2.jpeg"></div>
+            <div class="imgslider"><img src="img/img_parasite_3.jpeg"></div>
+        </div>
+    </div>
+
+
+
+
+
 
     <div class="tts-page--project__background extension-mask">
         <iframe src="/"></iframe>
@@ -47,11 +65,33 @@
 
     <!--    mask extention for project page-->
     <script src="./js/extension-mask.js" onload="new MaskExtensions({
-            width: 100,
+            width: 50,
             svgName : 'telecommande.svg',
             })"></script>
     <link href="./css/extension-mask.css" rel="stylesheet">
     <!--    END mask extention for project page-->
+
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+
+
+
+<script>
+
+$(document).ready(function(){
+    $('.slider-images').slick({
+        dots:false,
+        infinite: true,
+        autoplay: true,
+        slidesToShow: 1,
+        slideToScroll: 3,
+        arrows: false,
+
+    });
+  });
+</script>
 
 </body>
 

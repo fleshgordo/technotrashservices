@@ -75,10 +75,6 @@ html {
     z-index: 99;
 }
 
-img {
-    filter: drop-shadow(0px 0px 10px black);
-}
-
 /**
     techno trash services theme (tts-)
 */
@@ -226,3 +222,31 @@ tts grid
     }
 }
 
+
+
+
+
+
+/*********template page projet*********/
+
+.project-title{
+    width: 90vw;
+}
+
+p{
+    font-size: 3.5vw;
+    margin: 0;
+    padding-left:0.5vw;
+    padding-top: 1.5vh;;
+}
+
+.project-content{
+    width: 65.5vw;
+    top: 33%;
+}
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+    display: block; /* remove extra space below image */
+}

@@ -19,17 +19,19 @@ class MaskExtensions {
         this.#maskExtensionElement.style.maskSize         = `${width}px auto`
         this.#maskExtensionElement.style.webkitMaskSize   = `${width}px auto`
 
-        window.addEventListener("mousemove", e => this.#setMaskPosition({
+       /** window.addEventListener("mousemove", e => this.#setMaskPosition({
             x: e.clientX,
             y: e.clientY,
-        }))
+        })) */
+
+        
     }
 
     /**
      * @param {number} x
      * @param {number} y
      */
-    #setMaskPosition({x, y}) {
+     #setMaskPosition({x, y}) {
         this.#maskExtensionElement.style.maskPosition       = `${x - this.#width/2}px ${y}px`
         this.#maskExtensionElement.style.webkitMaskPosition = `${x - this.#width/2}px ${y}px`
     }

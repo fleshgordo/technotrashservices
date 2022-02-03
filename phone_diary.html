@@ -69,7 +69,8 @@
     <!--    mask extention for project page-->
     <script src="./js/extension-mask.js" onload="new MaskExtensions({
             width: 50,
-            svgName : 'telecommande.svg',
+            height: 200,
+            svgName : 'telephone.svg',
             })"></script>
     <link href="./css/extension-mask.css" rel="stylesheet">
     <!--    END mask extention for project page-->
@@ -78,6 +79,21 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
+
+
+<script>
+
+$(document).ready(function(){
+    $('.slider-images').slick({
+        dots:false,
+        infinite: true,
+        autoplay: true,
+        slidesToShow: 1,
+        slideToScroll: 3,
+        arrows: false,
+    });
+  });
+</script>
 
 </body>
 

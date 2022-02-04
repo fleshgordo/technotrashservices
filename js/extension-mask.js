@@ -64,7 +64,7 @@ class MaskExtensions {
         vwidth,
         vheight
     }) {
-        if ( x < vwidth - this.#width && x > vwidth - this.#width * 2 && y > vheight - this.#height && y < vheight ) {
+        if ( x < vwidth - this.#width && x > vwidth - this.#width * 3 && y > vheight - this.#height * 2 && y < vheight ) {
             window.location.href="/"
         }
     }

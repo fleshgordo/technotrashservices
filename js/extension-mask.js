@@ -54,8 +54,8 @@ class MaskExtensions {
         x,
         y
     }) {
-        this.#maskExtensionElement.style.maskPosition = `${x - this.#width/2}px ${y}px`
-        this.#maskExtensionElement.style.webkitMaskPosition = `${x - this.#width/2}px ${y}px`
+        this.#maskExtensionElement.style.maskPosition = `${x - this.#width/2}px ${y - this.#height/8}px`
+        this.#maskExtensionElement.style.webkitMaskPosition = `${x - this.#width/2}px ${y - this.#height/8}px`
     }
 
     #detectClick({
@@ -64,7 +64,7 @@ class MaskExtensions {
         vwidth,
         vheight
     }) {
-        if ( x < vwidth - this.#width && x > vwidth - this.#width * 2 && y > vheight - this.#height && y < vheight ) {
+        if ( x < vwidth - this.#width && x > vwidth - this.#width * 3 && y > vheight - this.#height * 2 && y < vheight ) {
             window.location.href="/"
         }
     }

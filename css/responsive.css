@@ -4,17 +4,65 @@
     grid-template-columns: repeat(3, 1fr);
     align-items: end;
   }
-
-  .project-title {
+  .website-title {
+    font-size: 30vw;
+    height: 100vh;
+    width: 33.3vw;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+  }
+  body:not(.tts-page-project) > .project-title {
     font-size: 30vw;
     writing-mode: vertical-lr;
     transform: rotate(180deg);
   }
-
-  .headline {
+  .tts-page {
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  body:not(.tts-page--project) .headline {
     flex-direction: column-reverse;
     justify-content: space-between;
     align-items: center;
     height: 100vh;
+    width: 33.3vw;
+  }
+  .project-title {
+    width: 100%;
+    margin: 0 1rem;
+  }
+  .project-content {
+    width: 90%;
+    top: 2rem;
+    margin: 1rem;
+    position: relative;
+  }
+  .tts-page--project .headline {
+    flex-direction: column;
+  }
+  .slick-slider {
+    padding: 2rem 0;
+    width: 100%;
+    position: relative;
+  }
+  .slick-slider img {
+    height: auto;
+  }
+  body:not(.tts-page--project) .text {
+    margin: 0 1rem;
+    width: 90vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  .text {
+    margin: 0 1rem;
+    width: 90%;
+  }
+  .colophon {
+    display: none;
+  }
+  .extension-mask {
+    display: none;
   }
 }

@@ -156,6 +156,22 @@ tts grid
     margin-left: 10px;
 }
 
+.instagram{
+    text-decoration: underline;
+
+}
+
+.instagram:hover{
+    text-decoration: none;
+
+}
+
+.instagram:visited{
+    text-decoration: underline;
+    color: white;
+
+}
+
 
 
 

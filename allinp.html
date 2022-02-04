@@ -7,8 +7,8 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
 
     <meta property="og:title" content="">
     <meta property="og:type" content="">
@@ -27,33 +27,33 @@
 </head>
 
 <body class="tts-page tts-page--project tts-page--is-negative">
-
-
     <div class="headline">
         <div class="project-title">
-            All In P <br> Raghid Jomaa & Clément Vogelsperger
+            All in P <br> Raghid Jomaa & Clément Vogelsperger
         </div>
-        
-            
-         <div class="text">
-            <p><i>Techno trash services</i> is a student collective created to explore the roles of discarded
-            electronic devices and data.
-            <br>What can we do with our old electronic devices? What could they be used for?
-            <br>During this exploration, Techno trash services proposes to create new services or products.</p>
+        <div class="text">
+
+
+            <p>All in P is a console that knows no time and graphics. This universal controller lets you plug in any
+                game and chose to play it with any different graphics style. You can transform the newest games to Super
+                Mario 64 style, or change the first Zelda into a hyperrealistic GTA universe.
+
+            </p>
         </div>
     </div>
 
-    <div class="project-content">
-    
+
+    <div class="slider-images">
+        <div class="imgslider"><img src="img/clement_ray/Manette_Zoom_IN.Redshift_ROP1.0001.jpg"></div>
+        <div class="imgslider"><img src="img/clement_ray/Manette_Zoom_IN.Redshift_ROP1.0130.jpg"></div>
+        <div class="imgslider"><img src="img/clement_ray/logo_website_allinP.png"></div>
+        <div class="imgslider">
             <video autoplay>
                 <source src="img/clement_ray/allinP_commercial_ad.mp4" type=video/mp4>
-              </video>
-       
+            </video>
+        </div>
+
     </div>
-
-
-
-
 
 
     <div class="tts-page--project__background extension-mask">
@@ -61,26 +61,37 @@
     </div>
 
 
-
-    <script src="./js/vendor/jquery.min.js"></script>
-    <script src="./js/vendor/jquery-ui.min.js"></script>
-    <script src="./js/main.js"></script>
-
     <!--    mask extention for project page-->
     <script src="./js/extension-mask.js" onload="new MaskExtensions({
-            width: 307,
-            height: 196,
+            width: 87,
+            height: 288,
             svgName : 'manette.svg',
             })"></script>
     <link href="./css/extension-mask.css" rel="stylesheet">
     <!--    END mask extention for project page-->
 
-
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
 
 
 
+    <script>
+
+        $(document).ready(function () {
+            $('.slider-images').slick({
+                dots: false,
+                infinite: true,
+                autoplay: false,
+                slidesToShow: 1,
+                slideToScroll: 1,
+                arrows: true,
+                prevArrow: "<img class='a-left control-c prev slick-prev' src='slick/fleche_next_epais.svg' style='height: 30px'>",
+                nextArrow: "<img class='a-right control-c next slick-next' src='slick/fleche_next_epais.svg' style='height: 20px;'>"
+
+            });
+        });
+    </script>
 
 </body>
 

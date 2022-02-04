@@ -30,6 +30,7 @@ tts typo & page layout
 
 .tts-page {
     position: relative;
+    overflow: hidden;
 }
 
 .tts-page--is-negative {
@@ -146,6 +147,7 @@ tts grid
     max-width: 30rem;
     margin-left: 9vw;
     padding-top: 1vh;
+    z-index: 666;
 }
 
 

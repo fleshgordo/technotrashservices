@@ -192,8 +192,6 @@ video {
     }
 
     .imgslider{
-        
-        background-color: pink;
         height: 72.5vh;
        
     }
@@ -206,4 +204,12 @@ video {
     width: 100%;
     height: 75vh;
     object-fit: cover;
+}
+
+.slick-next {
+    right: -35vw;
+}
+
+.slick-slider img {
+    object-fit: fill;
 }

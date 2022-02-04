@@ -29,35 +29,30 @@
 <body class="tts-page tts-page--project tts-page--is-negative">
     <div class="headline">
         <div class="project-title">
-            The Reconstruted Obsolescence <br> Salomé Kahn
+            Cryptocalc <br> Dorotha Grajewska & Andréia Rodrigues
         </div>
         <div class="text">
-            <p></p>
 
-            <p><i>Techno trash services</i> is a student collective created to explore the roles of discarded
-                electronic devices and data.
-                <br>What can we do with our old electronic devices? What could they be used for?
-                <br>During this exploration, Techno trash services proposes to create new services or products.</p>
+            <p>Cryptocalc is the safest cryptocurrency password holder in the market. It keeps your wallet’s password
+                secure in a customizable way. The calculator acts as an air gap between you and your computer. And let’s
+                face it, it’s sexier than a scribbled piece of paper.</p>
         </div>
     </div>
 
-    
-        <div class="slider-images">
-            <div class="imgslider"><img src="img/salome/image_salome_1.png"></div>
-            <div class="imgslider"><img src="img/img_parasite_2.jpeg"></div>
-            <div class="imgslider"><img src="img/img_parasite_3.jpeg"></div>
-        </div>
 
-        <!--<ul>
-            <li class="prev">coucou</li>
-            <li class="next">coucou</li>
-        </ul>-->
+    <div class="slider-images">
+        <div class="imgslider"><img src="img/salome/image_salome_1.png"></div>
+        <div class="imgslider"><img src="img/img_parasite_2.jpeg"></div>
+        <div class="imgslider"><img src="img/img_parasite_3.jpeg"></div>
+
+
+    </div>
 
 
     <div class="tts-page--project__background extension-mask">
         <iframe src="/index.html#no-objects"></iframe>
     </div>
-    
+
 
     <!--    mask extention for project page-->
     <script src="./js/extension-mask.js" onload="new MaskExtensions({
@@ -69,27 +64,26 @@
     <!--    END mask extention for project page-->
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
 
 
 
-<script>
+    <script>
 
-$(document).ready(function(){
-    $('.slider-images').slick({
-        dots:false,
-        infinite: true,
-        autoplay: false,
-        slidesToShow: 1,
-        slideToScroll: 1,
-        arrows: true,
-        prevArrow:"<img class='a-left control-c prev slick-prev' src='YOUR LEFT ARROW IMAGE URL'>",
-        nextArrow:"<img class='a-right control-c next slick-next' src='YOUR RIGHT ARROW IMAGE URL'>"
+        $(document).ready(function () {
+            $('.slider-images').slick({
+                dots: false,
+                infinite: true,
+                autoplay: true,
+                slidesToShow: 1,
+                slideToScroll: 1,
+                arrows: false,
 
-    });
-  });
-</script>
+            });
+        });
+    </script>
 
 </body>
+
 </html>

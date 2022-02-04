@@ -7,8 +7,8 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
 
     <meta property="og:title" content="">
     <meta property="og:type" content="">
@@ -31,24 +31,24 @@
 
     <div class="headline">
         <div class="project-title">
-            phoneDiary <br> Benjamin Boulesteix & Emma Parente
+            Toy Archives <br> Ilhana Bešić & Hugo Langlade
         </div>
-        
-            
-         <div class="text">
-            <p><i>Techno trash services</i> is a student collective created to explore the roles of discarded
-            electronic devices and data.
-            <br>What can we do with our old electronic devices? What could they be used for?
-            <br>During this exploration, Techno trash services proposes to create new services or products.</p>
+
+
+        <div class="text">
+            <p>Toy Archives is a podcast which explores the use of old toys and giving them a new purpose. By diving
+                into the world of circuit bending through dissasembling old toys, we create new ones. In this way we
+                explore creating new sounds by re-using practices and bulding a future that is focused on sustainabilty.
+            </p>
         </div>
     </div>
 
     <div class="project-content">
-    
-            <video autoplay>
-                <source src="img/benjamin_emma/phoneDiaryFinal.mp4" type=video/mp4>
-              </video>
-       
+        <iframe width="100%" height="400"
+            src="https://www.mixcloud.com/widget/iframe/?feed=%2FNTSRadio%2Fnatural-sciences-2nd-november-2019%2F"
+            frameborder="0"></iframe>
+    </div>
+
     </div>
 
 
@@ -68,19 +68,32 @@
 
     <!--    mask extention for project page-->
     <script src="./js/extension-mask.js" onload="new MaskExtensions({
-            width: 50,
-            height: 200,
-            svgName : 'telephone.svg',
+            width: 200,
+            height: 150,
+            svgName : 'guitarre.svg',
             })"></script>
     <link href="./css/extension-mask.css" rel="stylesheet">
     <!--    END mask extention for project page-->
 
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
 
 
+    <script>
+
+        $(document).ready(function () {
+            $('.slider-images').slick({
+                dots: false,
+                infinite: true,
+                autoplay: true,
+                slidesToShow: 1,
+                slideToScroll: 3,
+                arrows: false,
+            });
+        });
+    </script>
 
 </body>
 

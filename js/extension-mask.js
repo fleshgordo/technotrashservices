@@ -54,8 +54,8 @@ class MaskExtensions {
         x,
         y
     }) {
-        this.#maskExtensionElement.style.maskPosition = `${x - this.#width/2}px ${y}px`
-        this.#maskExtensionElement.style.webkitMaskPosition = `${x - this.#width/2}px ${y}px`
+        this.#maskExtensionElement.style.maskPosition = `${x - this.#width/2}px ${y - this.#height/8}px`
+        this.#maskExtensionElement.style.webkitMaskPosition = `${x - this.#width/2}px ${y - this.#height/8}px`
     }
 
     #detectClick({
